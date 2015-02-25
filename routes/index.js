@@ -4,6 +4,8 @@ var projects = require("../projects.json")
  */
 
 exports.view = function(req, res){
+	  var random_num = Math.random();
+
   // Here you should implement your random landing page rendering functionality
 if(random_num > 0.5){
     res.render("index", projects);
